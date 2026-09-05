@@ -8,23 +8,32 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: set up JDK 17
+      - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
           
-      - name: Install Gradle & Create Wrapper
+      - name: Auto Fix Structure & Build APK
         run: |
+          mkdir -p app
+          for f in *; do
+            if [ "$f" != "app" ] && [ "$f" != ".github" ]; then
+              mv "$f" app/
+            fi
+          done
+          echo "include(':app')" > settings.gradle.kts
+          cat << 'EOF' > build.gradle.kts
+          plugins {
+              id("com.android.application") version "8.1.2" apply false
+              id("org.jetbrains.kotlin.android") version "1.9.0" apply false
+          }
+          EOF
           sudo apt-get update && sudo apt-get install -y gradle
-          if [ ! -f "./gradlew" ]; then
-            gradle wrapper
-          fi
+          gradle wrapper
           chmod +x gradlew
+          ./gradlew assembleDebug
           
-      - name: Build APK
-        run: ./gradlew assembleDebug
-        
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
