@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "115194175845",
+    "project_id": "unitrack-ea843",
+    "storage_bucket": "unitrack-ea843.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115194175845:android:e3001fd630aaea7c22418c",
+        "android_client_info": {
+          "package_name": "com.example.data"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115194175845-rdqjp3jvoo659i5bqjc0qj7ive1r4ir7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt-52vyEb_Pqh6rwoHcDb2Do86tE-1Zhk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115194175845-rdqjp3jvoo659i5bqjc0qj7ive1r4ir7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115194175845:android:e3001fd630aaea7c22418c",
+        "android_client_info": {
+          "package_name": "com.aistudio.unitrack.hxgqm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115194175845-rdqjp3jvoo659i5bqjc0qj7ive1r4ir7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt-52vyEb_Pqh6rwoHcDb2Do86tE-1Zhk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115194175845-rdqjp3jvoo659i5bqjc0qj7ive1r4ir7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

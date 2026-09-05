@@ -1,0 +1,6 @@
+{
+  "name": "UniTrack",
+  "description": "Student Academic Tracker for assignments, quizzes, and deadlines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
