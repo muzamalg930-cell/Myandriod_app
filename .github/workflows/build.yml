@@ -12,14 +12,18 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Set up JDK
+    - name: Set up JDK 17
       uses: actions/setup-java@v5
       with:
         distribution: 'temurin'
         java-version: '17'
 
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v3
 
     - name: Build with Gradle
       run: ./gradlew build
+    ```
+
+**Agla Qadam**
+Isko paste karke push karein. Agar phir bhi Exit Code 1 aaye, toh us red color wale **build** box par click karke andar ke logs (text) ko dekhain ki wahan kya error likha aa raha hai, phir mujhe bata dein taaki hum us exact code error ko turant theek kar sakein.
